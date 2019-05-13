@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { NavBar, Icon } from 'antd-mobile';
 
 class Navbar extends Component {
+    static defaultProps = {
+        title: '这是标题'
+    }
     render() {
         return (
             <div>
@@ -13,7 +16,7 @@ class Navbar extends Component {
                         
                         <Icon key="1" type="ellipsis" style={{color:'#000'}}/>
                     ]}
-                >补换驾照</NavBar>
+                >{this.props.title}</NavBar>
 
                 {/*<NavBar
                     mode="dark"

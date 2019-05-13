@@ -1,0 +1,40 @@
+.Box{
+    width: 90%;
+    margin-bottom: 50px;
+    margin-left:5%;
+    background-color:rgba(0,0,0,.4);
+    .list{
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        // text-align: center;
+        &:nth-child(1){
+            border-radius: 15px 15px 0 0;
+        }
+        &:nth-child(2){
+            border-radius:0 0 15px 15px;
+        }
+    }
+    .close{
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        color:#5AA9E2;
+        text-align: center;
+        line-height: 50px;
+       
+    }
+}
+body :global(.am-list-item .am-list-line .am-list-content){
+    text-align: center;
+    font-size: 16px;
+    color:#5AA9E2;
+}
+body :global(.kefu__Box___2ysOC .kefu__close___2PXdE){
+    border:solid 1px #fff;
+    border-radius: 15px;
+    font-weight: 600;
+}
+body :global(.am-modal-content){
+    background-color:rgba(0,0,0,.2);
+}

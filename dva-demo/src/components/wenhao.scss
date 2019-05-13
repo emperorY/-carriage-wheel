@@ -1,0 +1,51 @@
+.box{
+    width: 5%;
+    // background: #f00;
+    margin-right:14%;
+    .imgMock{
+            // display: none;
+            width:100%;
+            height:100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, .6);
+            z-index: 11;     
+        }
+        .imgMockImg{
+            position: absolute;
+            left: 5%;
+            bottom: 50%;
+            top:50%;
+            margin-top: -11rem;
+            width:90%;
+            height:18rem;
+            padding:.7rem;
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: .9rem;
+            /* margin: auto auto; */
+            >img{
+                width:100%;
+                height: auto;
+                }
+            .txt{
+                text-align: center;
+                color:#f00;
+                font-weight: 600;
+            }
+            }
+        .wen{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            // margin-top:13px;
+            // margin-right:5%;
+            // margin-top:3%;
+            // margin-right:33%;
+    }
+    #mockAction{
+                display: none;
+            }
+}
+

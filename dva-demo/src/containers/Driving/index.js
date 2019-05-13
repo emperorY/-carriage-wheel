@@ -6,17 +6,40 @@ import NavMenu from "../../components/navmenu.js" //上传照片组件
 
 import PickerView from "../../components/citys/pickerView"
 import Navbar from "../../components/navbars"
-// import Kefu from '../components/kefu'
+import Kefu from '../../components/kefu.js'
+import Wenhao from "../../components/wenhao.js"
+// import CustomerService from "../customerService.js"
 
 //antd
 import { Icon } from 'antd';
 import "antd/dist/antd.css";
 import 'antd-mobile/dist/antd-mobile.css';
 class Index extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            // loading: false,
+            modal2: false,
+        };
+    }
+    // static defaultProps = {
+    //     title: '这是标题'
+    // }
+    //点击客服
+    keFu() {
+        this.setState({
+            modal2: true,
+        })
+        // console.log(1)
+    }
+
     render() {
+        let {
+            modal2 //客服显示隐藏
+        } = this.state;
         return (
             <div className={IndexStyle.wrap}>
-               <Navbar/>
+               <Navbar title="补换驾照"/>
                 <div className={IndexStyle.nav}>
                     <span>订单提交</span>
                     <span className={IndexStyle.spn2}>填写收货地址</span>
@@ -36,34 +59,36 @@ class Index extends Component {
                         </div>
                         <div className={IndexStyle.drivingCard}>
                             <span>当前驾照签发城市</span>
-                            <img src="../../../public/img/问号.svg" alt="" className={IndexStyle.wen} onClick={this.picClick}/>
+                            <Wenhao />
+                            {/*<img src="../../../public/img/问号.svg" alt="" className={IndexStyle.wen} onClick={this.picClick}/>**/}
                             <PickerView data={{ title: '当前驾照签发城市', Bar: '请选择签发地',txt:'当前签发城市',type: 2}}/>
                         </div>
                         <div className={IndexStyle.drivingCard}>
                             <span>可补换的签发城市</span>
-                            <img src="../../../public/img/问号.svg" alt="" className={IndexStyle.wen} onClick={this.picClick}/>
+                            <Wenhao/>
+                            {/*<img src="../../../public/img/问号.svg" alt="" className={IndexStyle.wen} onClick={this.picClick}/>**/}
                             <PickerView data={{ title: '可补换的签发城市', Bar: '请选择补换地',txt:'可补换城市',type: 2}}/>
-                        </div>
-                        
-                        
+                        </div> 
                     </div>
                     <div className={IndexStyle.serverPrice}>
                         <span className={IndexStyle.serverTotal}>服务费</span>
                         <span className={IndexStyle.red}>￥399</span>
                     </div>
-
                     <div className={IndexStyle.discount}>
                         <div><span>优惠</span><span>登陆后查看优惠券<Icon type="right" /></span></div>
                     </div>
-
                     <div className={IndexStyle.question}>
                         <u onClick={this.questionClick}>常见问题？</u>
                     </div>
                 </div>
                <div>
-                    <img onClick={this.customerService} src="../../../public/img/kf.png" alt="" className={IndexStyle.customerService}/>
+                    <img 
+                        onClick={()=>this.keFu()} 
+                        src="../../../public/img/kf.png" alt="" 
+                        className={IndexStyle.customerService}
+                    />
                </div>
-                {/*<Kefu modal={modal2}/>**/}
+                <Kefu modal={modal2}/>
                 <div className={IndexStyle.footer}>
                     <p>实付：<span className={IndexStyle.red}>￥399</span></p>
                     <button>立即支付</button>
@@ -73,16 +98,16 @@ class Index extends Component {
     }
     //常见问题
     questionClick = () => {
-        alert("正在开发，等等吧")
+        // alert("正在开发，等等吧")
+        this.props.history.push('/question')
+        // console.log(this.props)
+        
     }
     //问号
-    picClick = () => {
-        alert("正在开发，等等吧")
-    }
-    //客服
-    customerService = () => {
-       alert("正在开发，等等吧")
-    }
+    // picClick = () => {
+    //     alert("正在开发，等等吧")
+    // }
+    
 }
 
 export default Index;
