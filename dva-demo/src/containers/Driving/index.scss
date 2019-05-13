@@ -32,6 +32,7 @@
             text-align: center;
             line-height: 50px;
             font-size: 16px;
+            background-color: #fff;
         }
         .spn2{
             display: inline-block;
@@ -43,6 +44,7 @@
             color:#5AA9E2;
             line-height: 50px;
             font-size: 16px;
+            background-color: #fff;
         }
         .spn4,.spn3{
             display: inline-block;
@@ -54,6 +56,7 @@
             color:#5AA9E2;
             line-height: 50px;
             font-size: 16px;
+            background-color: #fff;
         }
     }
     .ban{
@@ -64,41 +67,41 @@
             // height: 100%;
         }
     }
-    .con{
-        width: 100%;
-        height: 130px;
-        background: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:0 7px;
-        box-sizing: border-box;
-        >dl{
-            width: 120px;
-            height: 100px;
-            margin-left:5px;
-            >dt{
-                width: 60px;
-                height: 43px;
-                border:solid 1px #666;
-                margin-left:3%;
-                margin-top:5%;
-                border-radius: 10px;
-            }
-            >dd{
-                width: 50px;
-                height: 50px;
-                margin-left:10%;
-                margin-top:5px;
-                color:#666;
-                text-align: center;
-            }
-        }
-    }
+    // .con{
+    //     width: 100%;
+    //     height: 130px;
+    //     background: #fff;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding:0 7px;
+    //     box-sizing: border-box;
+    //     >dl{
+    //         width: 120px;
+    //         height: 100px;
+    //         margin-left:5px;
+    //         >dt{
+    //             width: 60px;
+    //             height: 43px;
+    //             border:solid 1px #666;
+    //             margin-left:3%;
+    //             margin-top:5%;
+    //             border-radius: 10px;
+    //         }
+    //         >dd{
+    //             width: 50px;
+    //             height: 50px;
+    //             margin-left:10%;
+    //             margin-top:5px;
+    //             color:#666;
+    //             text-align: center;
+    //         }
+    //     }
+    // }
     .list{
         width: 100%;
         height:132px;
-        margin-top: 10px;
+        margin-top:20px;
     }
     .serverPrice{
         width: 100%;
@@ -141,7 +144,8 @@
         >span{
             display: inline-block;
             width: 80px;
-            color:#3B3D3C;
+            // color:#3B3D3C;
+            color:#000;
             font-size: 14px;
             // background: #f00;
         }
@@ -157,8 +161,9 @@
         >span{
             display: inline-block;
             width: 135px;
-            color:#3B3D3C;
+            // color:#3B3D3C;
             font-size: 14px;
+            color:#000;
         }
         .wen{
             display: inline-block;
@@ -172,7 +177,8 @@
     }
     //服务费
     .serverTotal{
-        color:#3B3D3C;
+        // color:#3B3D3C;
+        color:#000;
         font-size: 14px;
     }
     .city{
@@ -193,6 +199,10 @@
         color: #f00;
         font-weight: bold;
         margin-right:5px;
+    }
+    //优惠
+    .youhui{
+        color:#000;
     }
     //常见问题
     .question{

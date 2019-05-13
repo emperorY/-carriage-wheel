@@ -1,0 +1,110 @@
+.mock{
+  /* position: relative; */
+  width:100%;
+  height:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 11;
+}
+#mockAction{
+  display: none;
+}
+.mock .identityImg{
+  width:90%;
+  height:auto;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 13rem;
+}
+.mock .identityImg .IImg{
+  width:100%;
+}
+.mock .identityBtn{
+  position: absolute;
+  bottom: 0rem;
+  left: 5%;
+  width:90%;
+  height:10.2rem;
+  /* background: red; */
+  /* background: #fff; */
+  /* margin: 0 auto; */
+}
+.mock .identityBtn .cavv{
+  width:100%;
+  height:6rem;
+  margin-bottom: .8rem;
+  background: #fff;
+  border-radius: .5rem;
+}
+.mock .identityBtn .cavv .graph,.mock .identityBtn .cavv .album{
+  width:100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3AAFFE;
+  border-bottom: .1rem solid #efefef;
+}
+.mock .identityBtn .cavv .album{
+  border:0;
+}
+
+
+.mock .identityBtn .cancel{
+  width:100%;
+  height:3rem;
+  background: #fff;
+  border-radius: .5rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  color:#3AAFFE;
+  /* margin-bottom: .05rem; */
+}
+////////
+.addCav{
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+.cav{
+        width: 100%;
+        height: 130px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 7px;
+        box-sizing: border-box;
+        // margin-top:10px;
+    .dl{
+        display: inline-block;
+        width: 25%;
+        .dt{
+            width: 50px;
+            height:40px;
+            border:solid 1px #666;
+            margin-left:17%;
+            margin-top:40%;
+            border-radius: 15%;
+            >img{
+                display: inline-block;
+                width: 38px;
+                height: 38px;
+                margin-top:0px;
+                margin-left:5px;
+            }
+            // border-radius: 50%;
+        }
+        .dd{
+            width: 50px;
+            height: 50px;
+            margin-left:16%;
+            margin-top:5px;
+            color:#000;
+            text-align: center;
+        }
+    }
+}

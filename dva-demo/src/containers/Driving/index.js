@@ -10,6 +10,7 @@ import Kefu from '../../components/kefu.js'
 import Wenhao from "../../components/wenhao.js"
 // import CustomerService from "../customerService.js"
 
+import AAA from "../../components/aaa"
 //antd
 import { Icon } from 'antd';
 import "antd/dist/antd.css";
@@ -22,9 +23,6 @@ class Index extends Component {
             modal2: false,
         };
     }
-    // static defaultProps = {
-    //     title: '这是标题'
-    // }
     //点击客服
     keFu() {
         this.setState({
@@ -50,7 +48,8 @@ class Index extends Component {
                     <img src="../../../public/img/banner.jpg" alt="" />
                 </div>
                 <div className={IndexStyle.main}>
-                    <NavMenu/>
+                    {/*<NavMenu/>**/}
+                    <AAA />
                     {/**上传证件 */}
                     <div className={IndexStyle.list}>
                         <div className={IndexStyle.server}>
@@ -75,7 +74,7 @@ class Index extends Component {
                         <span className={IndexStyle.red}>￥399</span>
                     </div>
                     <div className={IndexStyle.discount}>
-                        <div><span>优惠</span><span>登陆后查看优惠券<Icon type="right" /></span></div>
+                        <div><span className={IndexStyle.youhui}>优惠</span><span>登陆后查看优惠券<Icon type="right" /></span></div>
                     </div>
                     <div className={IndexStyle.question}>
                         <u onClick={this.questionClick}>常见问题？</u>
