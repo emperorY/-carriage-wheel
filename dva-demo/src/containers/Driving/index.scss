@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    position: relative;
+    .nav{
+        width: 100%;
+        height: 50px;
+        background: #ccc;
+        // border-bottom:solid 1px #444;
+        // border-top: solid 1px #eee;
+        display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        // padding:0 10px;
+        // box-sizing:border-box;
+        // display: flex;
+        // justify-content: space-around;
+        
+        >span:nth-child(1){
+            width:25%;
+            height:100%;
+            color:#fff;
+            display: inline-block;
+            background: url('../../../public/img/dvas.png') no-repeat;
+            background-size:  100% 100%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+        }
+        .spn2{
+            display: inline-block;
+            width:27%;
+            height:100%;
+            background: url('../../../public/img/bph.png') no-repeat;
+            background-size:  100% 100%;
+            text-align: center;
+            color:#5AA9E2;
+            line-height: 50px;
+            font-size: 16px;
+        }
+        .spn4,.spn3{
+            display: inline-block;
+            width:24%;
+            height:100%;
+            background: url('../../../public/img/bph.png') no-repeat;
+            background-size:  100% 100%;
+            text-align: center;
+            color:#5AA9E2;
+            line-height: 50px;
+            font-size: 16px;
+        }
+    }
+    .ban{
+        width: 100%;
+        height: 110px;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .con{
+        width: 100%;
+        height: 130px;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 7px;
+        box-sizing: border-box;
+        >dl{
+            width: 120px;
+            height: 100px;
+            margin-left:5px;
+            >dt{
+                width: 60px;
+                height: 43px;
+                border:solid 1px #666;
+                margin-left:3%;
+                margin-top:5%;
+                border-radius: 10px;
+            }
+            >dd{
+                width: 50px;
+                height: 50px;
+                margin-left:10%;
+                margin-top:5px;
+                color:#666;
+                text-align: center;
+            }
+        }
+    }
+    .list{
+        width: 100%;
+        height:132px;
+        margin-top: 10px;
+    }
+    .serverPrice{
+        width: 100%;
+        height:44px;
+        background: #fff;
+        padding:0 10px;
+        box-sizing: border-box;
+        // margin-top:2px;
+    }
+    .list>div,
+    .serverPrice {
+        height: 44px;
+        line-height: 44px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .discount {
+        width: 100%;
+        background: #fff;
+        margin-top: 10px;
+        >div {
+            height: 50px;
+            line-height: 50px;
+            margin-left: 10px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10px;
+        }
+    }
+    .server{
+        width: 100%;
+        display: flex;
+        background: #fff;
+        box-sizing: border-box;
+        // border-bottom: solid 1px #000;
+        //服务类型
+        >span{
+            display: inline-block;
+            width: 80px;
+            color:#3B3D3C;
+            font-size: 14px;
+            // background: #f00;
+        }
+    }
+    
+    //补换驾照城市
+    .drivingCard{
+        width: 100%;
+        display: flex;
+        background: #fff;
+        box-sizing: border-box;
+        // border-bottom: solid 1px #000;
+        >span{
+            display: inline-block;
+            width: 135px;
+            color:#3B3D3C;
+            font-size: 14px;
+        }
+        .wen{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-top:3%;
+            margin-right:33%;
+        }
+    }
+    //服务费
+    .serverTotal{
+        color:#3B3D3C;
+        font-size: 14px;
+    }
+    .city{
+        display: flex;
+        align-items: center;
+    }
+    .wenhao{
+        width: 15px;
+        height: 15px;
+        margin-left:10px;
+        align-items: center;
+    }
+    .list>div>span:nth-child(1){
+        padding:0 10px;
+        box-sizing: border-box;
+    }
+    // .list>div:last-child{
+    //     border:0;
+    // }
+    .red{
+        color: #f00;
+        font-weight: bold;
+    }
+    //常见问题
+    .question{
+        width: 100%;
+        color:#5AA9E2;
+        text-align: center;
+        margin-top:5px;
+    }
+    //底部
+    .footer{
+        position: fixed;
+        height: 50px;
+        line-height: 50px;
+        bottom: 0;
+        font-weight: 600;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: space-between;
+        >p{
+            padding-left: 10px;
+        }
+        >button{
+            outline: 0;
+            border: 0;
+            color: #fff;
+            padding:0 20px;
+            background: #999
+        } 
+    }
+    //换驾照组件
+    .Driving{
+        padding-right: 10px;
+    }
+    .customerService{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        bottom: 55px;
+        right:10px;
+    }
+    
+}
+// body:global(.index__wrap___3u5SY .index__list___3731q > div:last-child){
+//     border-bottom: 1px solid #ccc
+// }
